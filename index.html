@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexis Gold</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-950 text-white">
+    <!-- Popup -->
+    <div id="popup" class="fixed bottom-5 left-5 bg-yellow-500 text-black px-4 py-2 rounded-xl shadow-lg hidden"></div>
+
+    <nav class="flex justify-between items-center px-8 py-4 bg-gray-900 shadow-lg">
+        <h1 class="text-2xl font-bold text-yellow-400">Nexis Gold</h1>
+    </nav>
+
+    <section class="text-center py-20 px-6">
+        <h2 class="text-5xl font-extrabold mb-4">The Masterpiece of Digital Wealth</h2>
+        <p class="text-gray-300 text-lg mb-6">
+            💳 Your Premium Portal for Digital Assets<br />
+            🎮 Instant In-Game Currency & Gift Cards<br />
+            🔒 Secure, Fast & Trusted Transactions
+        </p>
+        <a href="https://www.facebook.com/profile.php?id=61583888620050" target="_blank" class="bg-yellow-500 text-black px-6 py-3 rounded-2xl text-lg inline-block hover:bg-yellow-400">Get Your Credits Now</a>
+    </section>
+
+    <section class="py-16 px-8">
+        <h3 class="text-3xl font-bold text-center mb-10">Our Products</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-gray-900 p-6 rounded-2xl shadow-lg product-card" data-product="PUBG UC">
+                <h4 class="text-xl font-semibold mb-2">PUBG UC</h4>
+                <button class="mt-4 bg-yellow-500 text-black px-4 py-2 rounded-xl w-full buy-btn hover:bg-yellow-400">Buy Now</button>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow-lg product-card" data-product="Call of Duty CP">
+                <h4 class="text-xl font-semibold mb-2">Call of Duty CP</h4>
+                <button class="mt-4 bg-yellow-500 text-black px-4 py-2 rounded-xl w-full buy-btn hover:bg-yellow-400">Buy Now</button>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow-lg product-card" data-product="Genshin Impact">
+                <h4 class="text-xl font-semibold mb-2">Genshin Impact</h4>
+                <button class="mt-4 bg-yellow-500 text-black px-4 py-2 rounded-xl w-full buy-btn hover:bg-yellow-400">Buy Now</button>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow-lg product-card" data-product="Mobile Legends Diamonds">
+                <h4 class="text-xl font-semibold mb-2">Mobile Legends Diamonds</h4>
+                <button class="mt-4 bg-yellow-500 text-black px-4 py-2 rounded-xl w-full buy-btn hover:bg-yellow-400">Buy Now</button>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow-lg product-card" data-product="Roblox Robux">
+                <h4 class="text-xl font-semibold mb-2">Roblox Robux</h4>
+                <button class="mt-4 bg-yellow-500 text-black px-4 py-2 rounded-xl w-full buy-btn hover:bg-yellow-400">Buy Now</button>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow-lg product-card" data-product="Rainbow Six Credits">
+                <h4 class="text-xl font-semibold mb-2">Rainbow Six Credits</h4>
+                <button class="mt-4 bg-yellow-500 text-black px-4 py-2 rounded-xl w-full buy-btn hover:bg-yellow-400">Buy Now</button>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow-lg product-card" data-product="Razer Gold">
+                <h4 class="text-xl font-semibold mb-2">Razer Gold</h4>
+                <button class="mt-4 bg-yellow-500 text-black px-4 py-2 rounded-xl w-full buy-btn hover:bg-yellow-400">Buy Now</button>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow-lg product-card" data-product="Wuthering Waves">
+                <h4 class="text-xl font-semibold mb-2">Wuthering Waves</h4>
+                <button class="mt-4 bg-yellow-500 text-black px-4 py-2 rounded-xl w-full buy-btn hover:bg-yellow-400">Buy Now</button>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow-lg product-card" data-product="Zenless Zone Zero">
+                <h4 class="text-xl font-semibold mb-2">Zenless Zone Zero</h4>
+                <button class="mt-4 bg-yellow-500 text-black px-4 py-2 rounded-xl w-full buy-btn hover:bg-yellow-400">Buy Now</button>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow-lg product-card" data-product="Steam Wallet">
+                <h4 class="text-xl font-semibold mb-2">Steam Wallet</h4>
+                <button class="mt-4 bg-yellow-500 text-black px-4 py-2 rounded-xl w-full buy-btn hover:bg-yellow-400">Buy Now</button>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow-lg product-card" data-product="Apple Gift Cards">
+                <h4 class="text-xl font-semibold mb-2">Apple Gift Cards</h4>
+                <button class="mt-4 bg-yellow-500 text-black px-4 py-2 rounded-xl w-full buy-btn hover:bg-yellow-400">Buy Now</button>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow-lg product-card" data-product="Google Play Cards">
+                <h4 class="text-xl font-semibold mb-2">Google Play Cards</h4>
+                <button class="mt-4 bg-yellow-500 text-black px-4 py-2 rounded-xl w-full buy-btn hover:bg-yellow-400">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Options Modal -->
+    <div id="productModal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+        <div class="bg-gray-900 p-8 rounded-2xl w-96 max-w-full mx-4">
+            <h3 id="modalTitle" class="text-xl font-bold mb-4"></h3>
+            <div id="modalOptions"></div>
+            <button id="closeModal" class="mt-4 w-full bg-gray-700 p-2 rounded-lg hover:bg-gray-600">Cancel</button>
+        </div>
+    </div>
+
+    <section class="py-16 px-8 bg-gray-900 text-center">
+        <h3 class="text-3xl font-bold mb-6">Why Our Prices Are Higher</h3>
+        <p class="text-gray-300 max-w-3xl mx-auto">
+            We use trusted sources to ensure safe delivery and protect your account. You are paying for reliability and speed.
+        </p>
+    </section>
+
+    <section class="py-16 px-8 text-center">
+        <h3 class="text-3xl font-bold mb-6">About Us</h3>
+        <p class="text-gray-300 max-w-3xl mx-auto">
+            Nexis Gold delivers game currency and gift cards quickly and securely with a focus on trust and speed.
+        </p>
+    </section>
+
+    <section class="py-16 px-8 bg-gray-900 text-center">
+        <h3 class="text-3xl font-bold mb-6">Customer Reviews</h3>
+
+        <div class="max-w-xl mx-auto mb-6">
+            <input id="reviewName" placeholder="Your Name" class="w-full mb-2 p-2 bg-gray-800 rounded text-white" />
+            <textarea id="reviewText" placeholder="Your Review" class="w-full mb-2 p-2 bg-gray-800 rounded text-white h-20"></textarea>
+            <select id="reviewStars" class="w-full mb-2 p-2 bg-gray-800 rounded text-white">
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="2">2 Stars</option>
+                <option value="1">1 Stars</option>
+            </select>
+            <button id="submitReview" class="bg-yellow-500 text-black px-4 py-2 rounded hover:bg-yellow-400">Submit</button>
+        </div>
+
+        <div id="reviewsContainer" class="grid md:grid-cols-3 gap-6">
+            <div class="bg-gray-800 p-4 rounded-xl">
+                <p class="text-yellow-400">★★★★★</p>
+                <p>"Fast delivery!"</p>
+                <p class="text-sm text-gray-400 mt-2">- Rafi</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-xl">
+                <p class="text-yellow-400">★★★★★</p>
+                <p>"Trusted seller"</p>
+                <p class="text-sm text-gray-400 mt-2">- Tanvir</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-xl">
+                <p class="text-yellow-400">★★★★☆</p>
+                <p>"Smooth transaction"</p>
+                <p class="text-sm text-gray-400 mt-2">- Siam</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-8 text-center">
+        <h3 class="text-3xl font-bold mb-6">Payment Method</h3>
+        <p class="text-gray-300">Only bKash accepted</p>
+    </section>
+
+    <footer class="bg-gray-900 text-center py-6">
+        <p>© 2026 Nexis Gold</p>
+        <p class="text-sm text-gray-400">Owned by Lumora</p>
+    </footer>
+
+    <script>
+        // Product options data
+        const productOptions = {
+            "PUBG UC": ["60 UC", "325 UC", "660 UC"],
+            "Call of Duty CP": ["80 CP", "420 CP"],
+            "Genshin Impact": ["60 GC", "300 GC"],
+            "Mobile Legends Diamonds": ["86 Diamonds", "172 Diamonds"],
+            "Roblox Robux": ["80 Robux", "400 Robux"],
+            "Rainbow Six Credits": ["600 Credits"],
+            "Razer Gold": ["$5", "$10"],
+            "Wuthering Waves": ["60 Lunite"],
+            "Zenless Zone Zero": ["60 Monochrome"],
+            "Steam Wallet": ["$5", "$10"],
+            "Apple Gift Cards": ["$5", "$10"],
+            "Google Play Cards": ["$5", "$10"]
+        };
+
+        // Popup notifications
+        const messages = [
+            "Someone just bought PUBG UC",
+            "New order: Roblox Robux",
+            "Customer purchased Steam Wallet",
+        ];
+        let popupInterval = setInterval(() => {
+            const msg = messages[Math.floor(Math.random() * messages.length)];
+            const popup = document.getElementById('popup');
+            popup.textContent = msg;
+            popup.classList.remove('hidden');
+            setTimeout(() => popup.classList.add('hidden'), 3000);
+        }, 8000);
+
+        // Product modal functionality
+        document.querySelectorAll('.buy-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const product = this.closest('.product-card').dataset.product;
+                const modal = document.getElementById('productModal');
+                const modalTitle = document.getElementById('modalTitle');
+                const modalOptions = document.getElementById('modalOptions');
+                
+                modalTitle.textContent = `Select ${product}`;
+                modalOptions.innerHTML = '';
+                
+                productOptions[product].forEach(option => {
+                    const optionBtn = document.createElement('button');
+                    optionBtn.className = 'block w-full mb-2 bg-gray-800 p-2 rounded-lg hover:bg-yellow-500 hover:text-black text-left';
+                    optionBtn.textContent = option;
+                    optionBtn.onclick = () => window.open('https://www.facebook.com/profile.php?id=61583888620050', '_blank');
+                    modalOptions.appendChild(optionBtn);
+                });
+                
+                modal.classList.remove('hidden');
+            });
+        });
+
+        // Close modal
+        document.getElementById('closeModal').addEventListener('click', () => {
+            document.getElementById('productModal').classList.add('hidden');
+        });
+
+        // Review functionality
+        document.getElementById('submitReview').addEventListener('click', function() {
+            const name = document.getElementById('reviewName').value;
+            const text = document.getElementById('reviewText').value;
+            const stars = document.getElementById('reviewStars').value;
+            
+            if (!name || !text) return;
+            
+            const reviewsContainer = document.getElementById('reviewsContainer');
+            const newReview = document.createElement('div');
+            newReview.className = 'bg-gray-800 p-4 rounded-xl';
+            newReview.innerHTML = `
+                <p class="text-yellow-400">${'★'.repeat(stars)}</p>
+                <p>"${text}"</p>
+                <p class="text-sm text-gray-400 mt-2">- ${name}</p>
+            `;
+            reviewsContainer.appendChild(newReview);
+            
+            document.getElementById('reviewName').value = '';
+            document.getElementById('reviewText').value = '';
+        });
+
+        // Close modal on outside click
+        document.getElementById('productModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
